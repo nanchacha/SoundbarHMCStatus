@@ -20,10 +20,10 @@ import streamlit as st
 from bs4 import BeautifulSoup
 import time
 
-http_proxy = '70.10.15.10:8080'
-https_proxy = '70.10.15.10:8080'
+# http_proxy = '70.10.15.10:8080'
+# https_proxy = '70.10.15.10:8080'
 
-st.markdown("<h1 style='text-align: center; color: #F95700;'>Soundbar Help Me Choose 라이브 현황</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #F95700;'>Soundbar Help Me Choose 라이브 현황</h2>", unsafe_allow_html=True)
 
 cntrList = ['IQ_AR', 'IQ_KU', 'GR', 'UK', 'ID', 'MY', 'EG', 'HU', 'LEVANT', 'ES', 'LEVANT_AR', 'HK_EN', 'HK', 'RO', 'SE', 'NO',
             'DK', 'FI', 'AT', 'CH', 'VN', 'CH_FR',
@@ -43,7 +43,7 @@ def statusYn(num):
 
 
 def getStatus(cntr):
-    r = requests.get("https://www.samsung.com/{}/audio-devices/help-me-choose".format(cntr), proxies={"http": http_proxy, "https": https_proxy}, verify=False)
+    r = requests.get("https://www.samsung.com/{}/audio-devices/help-me-choose".format(cntr), verify=False)
     num = -1
     html = r.content
     soup = BeautifulSoup(html, 'html.parser')
