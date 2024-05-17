@@ -1,0 +1,5 @@
+name: soundbarhmcapps
+dependencies:
+  - numpy
+  - pandas
+  - bs4
