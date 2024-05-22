@@ -23,8 +23,6 @@ import time
 # http_proxy = '70.10.15.10:8080'
 # https_proxy = '70.10.15.10:8080'
 
-requests.packages.urllib3.disable_warning()
-
 st.markdown("<h2 style='text-align: center; color: #F95700;'>Soundbar Help Me Choose 라이브 현황</h2>", unsafe_allow_html=True)
 
 cntrList = ['IQ_AR', 'IQ_KU', 'GR', 'UK', 'ID', 'MY', 'EG', 'HU', 'LEVANT', 'ES', 'LEVANT_AR', 'HK_EN', 'HK', 'RO', 'SE', 'NO',
