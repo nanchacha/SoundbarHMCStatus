@@ -92,3 +92,5 @@ with col3:
             st.write("{} :red_circle:".format(cntrList[i]))
 
 st.success(body="Check Done!")
+
+print(live_list)
