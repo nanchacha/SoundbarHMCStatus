@@ -95,4 +95,9 @@ with col3:
 
 st.success(body="Check Done!")
 
-print(live_list)
+s= ''
+
+for i in live_list:
+    s += "- " + i
+
+st.markdown(s)
