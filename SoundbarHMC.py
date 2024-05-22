@@ -70,7 +70,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     for i in range(sectionA):
         if (statusYn(getStatus(cntrList[i]))):
-            live_list.add(cntrList[i])
+            live_list.append(cntrList[i])
             st.write("{} :white_check_mark:".format(cntrList[i]))
         else:
             st.write("{} :red_circle:".format(cntrList[i]))
@@ -78,7 +78,7 @@ with col1:
 with col2:
     for i in range(sectionA, sectionB):
         if (statusYn(getStatus(cntrList[i]))):
-            live_list.add(cntrList[i])
+            live_list.append(cntrList[i])
             st.write("{} :white_check_mark:".format(cntrList[i]))
         else:
             st.write("{} :red_circle:".format(cntrList[i]))
@@ -86,7 +86,7 @@ with col2:
 with col3:
     for i in range(sectionB, len(cntrList)):
         if (statusYn(getStatus(cntrList[i]))):
-            live_list.add(cntrList[i])
+            live_list.append(cntrList[i])
             st.write("{} :white_check_mark:".format(cntrList[i]))
         else:
             st.write("{} :red_circle:".format(cntrList[i]))
