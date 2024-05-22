@@ -96,6 +96,6 @@ st.success(body="Check Done!")
 s= ''
 
 for i in live_list:
-    s += "- " + i
+    s += ", " + i + "\n"
 
 st.markdown(s)
