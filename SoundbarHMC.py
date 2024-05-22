@@ -19,6 +19,10 @@ import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 import time
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 # http_proxy = '70.10.15.10:8080'
 # https_proxy = '70.10.15.10:8080'
