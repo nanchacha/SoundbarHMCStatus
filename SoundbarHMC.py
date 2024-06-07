@@ -96,10 +96,16 @@ with col3:
             st.write("{} :red_circle:".format(cntrList[i]))
 
 st.success(body="Check Done!")
+st.markdown("<h3 style='text-align: center; color: #F95700;'>총 라이브된 사이트는 {}개 입니다.</h3>".format(len(live_list)), unsafe_allow_html=True)
 
 s= ''
+cnt=0
 
 for i in live_list:
-    s += ", " + i + "\n"
+    if cnt == 0:
+        s += i
+    else:
+        s += ", " + i
+    cnt+=1    
 
 st.markdown(s)
